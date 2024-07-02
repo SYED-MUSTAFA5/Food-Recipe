@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Recipe Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Food Recipes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="mycontainer">
+  <header id="home" class="home">
+ <!--<div class="container text-center">
+        <h1>..................</h1>
+        <h1>Welcome to Food Recipes</h1>
+        <p >Discover delicious recipes</p>
+        <a href="#recipes" class="btn btn-primary animate__animated animate__fadeInUp">Explore Recipes</a>-->
+
+        <div class="back-image">
+        <img src="https://images.unsplash.com/photo-1615937722923-67f6deaf2cc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" width="1450" height="500">
+            <div class="text-center">
+                <h2> Welcome to Food Recipes.</h2>
+                <p>Discover delicious recipes</p>
+                <a href="#recipes" class="btn btn-primary animate__animated animate__fadeInUp">Explore Recipes</a>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- Recipes Section -->
+<section id="recipes" class="py-5">
+    <div class="container">
+      <h2 class="text-center animated fadeInUp">Our Recipes:</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card animated zoomIn">
+            <img src="01.jfif" class="card-img-top" alt="Spaghetti Carbonara">
+            <div class="card-body">
+              <h5 class="card-title">Spaghetti Carbonara</h5>
+              <p class="card-text">A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+              <a href="#recipe1" class="btn btn-primary" data-toggle="modal">View Recipe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card animated zoomIn">
+            <img src="02.jfif" class="card-img-top" alt="Margherita Pizza">
+            <div class="card-body">
+              <h5 class="card-title">Classic Margherita Pizza</h5>
+              <p class="card-text">A simple yet delicious pizza topped with fresh mozzarella, tomatoes, and basil.</p>
+              <a href="#recipe2" class="btn btn-primary" data-toggle="modal">View Recipe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card animated zoomIn">
+            <img src="03.jfif" class="card-img-top" alt="Chocolate Chip Cookies">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Chip Cookies</h5>
+              <p class="card-text">Classic homemade chocolate chip cookies, crispy on the edges and chewy in the middle.</p>
+              <a href="#recipe3" class="btn btn-primary" data-toggle="modal">View Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recipe Modals -->
+  <!-- Modal for Recipe 1 -->
+  <div class="modal fade" id="recipe1" tabindex="-1" aria-labelledby="recipe1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipe1Label">Spaghetti Carbonara</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>200g spaghetti</li>
+            <li>100g pancetta</li>
+            <li>2 large eggs</li>
+            <li>50g pecorino cheese, grated</li>
+            <li>50g parmesan cheese, grated</li>
+            <li>2 cloves garlic, minced</li>
+            <li>Salt and black pepper to taste</li>
+            <li>Fresh parsley, chopped (optional)</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Cook the spaghetti according to the package instructions until al dente. Reserve a cup of pasta water and then drain the spaghetti.</li>
+            <li>In a large skillet, cook the pancetta over medium heat until crispy. Remove from the pan and set aside.</li>
+            <li>In the same pan, add the garlic and cook for about 1 minute until fragrant.</li>
+            <li>In a bowl, whisk together the eggs, pecorino cheese, parmesan cheese, salt, and black pepper.</li>
+            <li>Add the cooked spaghetti to the skillet with the garlic and toss to combine. Remove from heat.</li>
+            <li>Quickly pour the egg and cheese mixture over the hot pasta, stirring constantly to create a creamy sauce. Add reserved pasta water a little at a time if the sauce is too thick.</li>
+            <li>Stir in the crispy pancetta and garnish with fresh parsley if desired. Serve immediately.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal for Recipe 2 -->
+  <div class="modal fade" id="recipe2" tabindex="-1" aria-labelledby="recipe2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipe2Label">Classic Margherita Pizza</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>1 pizza dough ball</li>
+            <li>1/2 cup tomato sauce</li>
+            <li>200g fresh mozzarella cheese, sliced</li>
+            <li>Fresh basil leaves</li>
+            <li>2 tablespoons olive oil</li>
+            <li>Salt and black pepper to taste</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Preheat your oven to the highest temperature (usually around 500°F or 260°C) and place a pizza stone or baking sheet inside to heat up.</li>
+            <li>Roll out the pizza dough on a floured surface to your desired thickness.</li>
+            <li>Spread the tomato sauce evenly over the dough, leaving a small border around the edges.</li>
+            <li>Arrange the slices of mozzarella cheese on top of the sauce.</li>
+            <li>Drizzle olive oil over the pizza and season with salt and black pepper.</li>
+            <li>Carefully transfer the pizza to the preheated pizza stone or baking sheet.</li>
+            <li>Bake for 10-12 minutes, or until the crust is golden and the cheese is bubbly and slightly browned.</li>
+            <li>Remove from the oven and scatter fresh basil leaves over the top. Serve hot.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal for Recipe 3 -->
+  <div class="modal fade" id="recipe3" tabindex="-1" aria-labelledby="recipe3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipe3Label">Chocolate Chip Cookies</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>1 cup unsalted butter, softened</li>
+            <li>1 cup granulated sugar</li>
+            <li>1 cup packed brown sugar</li>
+            <li>2 large eggs</li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>3 cups all-purpose flour</li>
+            <li>1 teaspoon baking soda</li>
+            <li>1/2 teaspoon baking powder</li>
+            <li>1/2 teaspoon salt</li>
+            <li>2 cups chocolate chips</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Preheat the oven to 350°F (175°C).</li>
+            <li>In a large bowl, cream together the butter, granulated sugar, and brown sugar until smooth.</li>
+            <li>Beat in the eggs one at a time, then stir in the vanilla extract.</li>
+            <li>Combine the flour, baking soda, baking powder, and salt; gradually stir into the creamed mixture.</li>
+            <li>Fold in the chocolate chips.</li>
+            <li>Drop by rounded spoonfuls onto ungreased baking sheets.</li>
+            <li>Bake for 10-12 minutes, or until edges are golden brown. Cool on wire racks.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center animated fadeInUp">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4 text-center">
+
+    <div class="social-btn">
+        <a href="https://www.facebook.com" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank" ><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="container">
+      <p>&copy; 2024 Food Recipes. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+</body>
+</html>
